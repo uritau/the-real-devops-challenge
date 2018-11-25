@@ -227,6 +227,8 @@ We want to fix the second endpoint. Return a json object instead of a json array
 As a good devops engineer, you know the advantages of running tasks in an automated way. There are some cicd systems that can be used to make it happen.
 Choose one, travis-ci, gitlab-ci, circleci... whatever you want. Give us a successful pipeline.
 
+You could find a successfull pipeline in this link https://travis-ci.com/uritau/the-real-devops-challenge.
+
 ### Challenge 3. Dockerize the APP
 
 ![DockerPython](./assets/docker.python.png)
