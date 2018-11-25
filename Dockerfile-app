@@ -1,0 +1,15 @@
+FROM python:3
+
+#Define default security credentials
+ENV MONGO_URI=mongodb://localhost/intelygenz
+
+#Install python app requirements
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+#Map required application files (and folders)
+COPY src src
+COPY app.py app.py
+
+#Default execution
+ENTRYPOINT python app.py
