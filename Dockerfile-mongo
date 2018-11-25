@@ -1,0 +1,6 @@
+FROM mongo
+
+ENV MONGO_INITDB_DATABASE=intelygenz
+
+COPY init_mongo.sh docker-entrypoint-initdb.d/
+COPY data/restaurant.json /restaurant.json
